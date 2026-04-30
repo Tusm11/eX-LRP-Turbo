@@ -2,7 +2,7 @@
 
 
 ## The Architecture
-![alt text](eX-LRP-Turbo.png)
+![alt text](Gemini_Generated_Image_rteekrrteekrrtee-1.png)
 
 ### The Problem
 | Standard Merging | ex-LRP-Turbo Merging |
