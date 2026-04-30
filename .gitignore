@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# Large Model Files (MUST BE EXCLUDED FOR GITHUB)
+real_models/
+test_models/
+clinical-merged-model/
+clinical-final-merge/
+clinical-qwen-final/
+*.safetensors
+*.bin
+*.pt
+
+# Workspace
+turbo_work/
+.gemini/
+
+# Output folders
+outputs/
+logs/
+
+# Secrets
+.env

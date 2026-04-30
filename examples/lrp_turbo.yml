@@ -1,0 +1,17 @@
+merge_method: lrp_turbo
+base_model: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+parameters:
+  density: 0.7    # Keep top 70% most relevant weights
+models:
+  - model: path/to/your-model-1
+    parameters:
+      weight: 1.0
+      lrp_scores: "./turbo-output/model1/lrp_scores.safetensors"
+      turbo_model: "./turbo-output/model1/turbo_quant_model.pt"
+  - model: path/to/your-model-2
+    parameters:
+      weight: 1.0
+      lrp_scores: "./turbo-output/model2/lrp_scores.safetensors"
+      turbo_model: "./turbo-output/model2/turbo_quant_model.pt"
+dtype: float16
+tokenizer_source: base
